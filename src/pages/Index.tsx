@@ -67,7 +67,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-border py-8">
         <div className="container text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} AZ Blog. Crafted with care.</p>
+          <p>© {new Date().getFullYear()} AZ Blog | Azeez Adams Adedeji</p>
         </div>
       </footer>
     </div>
