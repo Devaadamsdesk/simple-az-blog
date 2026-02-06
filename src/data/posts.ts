@@ -9,52 +9,74 @@ const generateId = (): string => {
 const samplePosts: Post[] = [
   new Post(
     'post-1',
-    'The Art of Minimalist Design',
-    `Minimalism in design is not about removing everything until nothing remains. It's about removing everything that doesn't serve a purpose until only the essential remains.
+    'A Critique of a Website\'s Responsiveness: Analyzing Layout Across Three Screen Sizes',
+    `A truly responsive website behaves differently on desktop, tablet, and mobile.
 
-The philosophy behind minimalist design goes beyond aesthetics. It's about creating clarity, reducing cognitive load, and allowing users to focus on what truly matters. When we strip away the unnecessary, we're left with designs that breathe, that guide users naturally through their journey.
+A website may look perfect on desktop yet fail completely on mobile. True responsiveness is revealed through testing across multiple screen sizes.
 
-Consider the white space in a well-designed page. It's not empty—it's purposeful. It creates rhythm, establishes hierarchy, and gives elements room to exist. Every margin, every gap, every pause in the visual flow is intentional.
+On desktop, layouts often appear polished. On tablets, spacing issues emerge. On mobile, navigation and content hierarchy are frequently exposed as weak.
 
-The challenge lies in knowing what to keep. Every element must earn its place. A button, a headline, an image—each must serve a clear purpose. If it doesn't add value, it subtracts from the experience.
+A responsive website:
 
-This approach requires discipline. It's easier to add than to subtract. But the restraint pays off in interfaces that feel effortless, pages that load faster, and experiences that users actually enjoy.`,
-    new Author('Sarah Chen'),
-    new Date('2025-01-15')
+Reorders content intelligently
+
+Adjusts spacing and typography
+
+Optimizes touch targets
+
+Preserves hierarchy across breakpoints
+
+Responsive design is not about resizing, it's about redesigning thoughtfully for each context.`,
+    new Author('Azeez Adams'),
+    new Date('2026-02-06')
   ),
   new Post(
     'post-2',
-    'Building Resilient Frontend Architecture',
-    `Modern web applications demand architecture that can evolve. The patterns we choose today determine how easily we can adapt tomorrow.
+    'Accessibility in Markup: How Semantic HTML Helps Create Inclusive Websites',
+    `Accessibility begins with HTML, not JavaScript or ARIA attributes.
 
-Component-based architecture has transformed how we think about frontend development. By breaking interfaces into reusable, self-contained pieces, we create systems that are easier to test, maintain, and scale.
+Semantic HTML plays a major role in web accessibility. Assistive technologies rely on meaningful markup to guide users through content.
 
-But good architecture goes beyond components. It's about establishing clear boundaries, defining data flows, and creating conventions that entire teams can follow. It's about making the right thing easy and the wrong thing hard.
+It communicates meaning to assistive technologies such as screen readers and keyboard navigation tools. Using proper elements ensures content is usable by people with disabilities.
 
-State management remains one of the most debated topics. The key insight is that not all state is created equal. Server state, UI state, and form state each have different characteristics and deserve different solutions.
+Accessible markup:
 
-Testing strategy is another crucial consideration. Unit tests for pure functions, integration tests for feature workflows, and end-to-end tests for critical paths. The testing pyramid still holds, but the layers have evolved.
+Improves SEO
 
-Documentation ties it all together. Architecture decisions without documentation become tribal knowledge. Write ADRs (Architecture Decision Records), maintain component libraries, and keep README files current.`,
-    new Author('Marcus Williams'),
-    new Date('2025-01-22')
+Enhances usability for all users
+
+Reduces legal and compliance risks
+
+Encourages cleaner architecture
+
+Replacing clickable <div> elements with proper <button> or <a> elements is a small change with massive impact.
+
+Accessibility is not a feature, it's a standard.`,
+    new Author('Azeez Adams'),
+    new Date('2026-02-06')
   ),
   new Post(
     'post-3',
-    'The Psychology of User Experience',
-    `Every interface tells a story. The best ones tell stories that feel inevitable—where each step flows naturally to the next.
+    'Flexbox vs. Grid: Choosing the Right CSS Layout Tool for the Job',
+    `Flexbox and CSS Grid are often compared, but they solve different problems.
 
-Understanding user psychology isn't about manipulation. It's about meeting people where they are, respecting their time, and making their goals achievable with minimum friction.
+Flexbox is one-dimensional. It excels at aligning items along a single axis, perfect for navigation bars, buttons, cards, and UI components.
 
-Cognitive load theory teaches us that working memory is limited. When we ask users to remember too much, they struggle. Progressive disclosure—revealing information as it becomes relevant—keeps cognitive load manageable.
+CSS Grid is two-dimensional. It is designed for overall page layouts, complex grids, dashboards, and responsive sections that require row and column control.
 
-Habit formation plays a crucial role in product success. Products that integrate into existing routines stick. The hook model (trigger, action, variable reward, investment) explains why some products become daily habits while others are forgotten.
+Experienced developers don't choose one exclusively. They combine both strategically:
 
-Emotional design matters more than we often acknowledge. Users form impressions in milliseconds. These emotional responses color everything that follows. A delightful moment of microinteraction can transform a mundane task into something memorable.
+Grid defines the macro layout
 
-Accessibility is not optional. When we design for the margins, we often improve experiences for everyone. Captions help the deaf and those in noisy environments. High contrast helps the visually impaired and those in bright sunlight.`,
-    new Author('Elena Rodriguez'),
-    new Date('2025-02-01')
+Flexbox fine-tunes the micro layout
+
+Flexbox is ideal for one-dimensional layouts like navigation bars, cards, and form controls.
+
+CSS Grid excels at two-dimensional layouts such as page structures, dashboards, and galleries.
+
+Using the right tool results in cleaner markup, simpler CSS, and layouts that adapt naturally.`,
+    new Author('Azeez Adams'),
+    new Date('2026-02-06')
   ),
 ];
 
